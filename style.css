@@ -5,13 +5,12 @@
 
 .heading{
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .heading > h1{
-    min-height: 100px;
     color: darkslategray;
     font-family: sans-serif;
 }
@@ -19,6 +18,7 @@
 .row > img{
     height: 100px;
     width: 100px;
+    margin: 10px;
 }
 
 .container{
@@ -32,14 +32,14 @@
 
 #row1{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: mediumturquoise;
 }
 
 #row2{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #d6a6b3;
 }
@@ -52,5 +52,22 @@
 }
 
 .page{
-    min-width: 700px;
+    width: 700px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: whitesmoke;
+}
+
+.footing{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.footing > p{
+    color: silver;
+    font-family: sans-serif;
+    min-height: 40px;
 }
